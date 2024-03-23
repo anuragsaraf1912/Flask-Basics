@@ -3,6 +3,15 @@ from flask import Flask, redirect, url_for, render_template, request, session
 app = Flask(__name__)
 app.secret_key = "example"
 
+"""
+There are 4 major ways to transfer data around: 
+1. GET request 
+2. POST form request
+3. Adding to the URL as done in 'results' route
+4. Saving the data in session and using it for different purpose
+
+"""
+
 @app.route('/')
 def welcome():
     return render_template('index.html')

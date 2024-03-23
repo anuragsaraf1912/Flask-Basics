@@ -1,3 +1,5 @@
+
+#THIS IS THE BASIC VERSION OF THE FLASK APP
 from flask import Flask, redirect, url_for
 
 app = Flask(__name__)
