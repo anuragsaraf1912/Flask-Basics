@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href={{url_for('static', filename='style/table.css')}}>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table class="table table-bordered">
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            {% for key in data %}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{data[key]}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Result</title>
+    <script type='text/javascript' src="{{ url_for('static', filename='scripts/scripts.js') }}"></script>
+</head>
+<body>
+    {% if score >= 50 %}
+    <h2>The person passed with {{score}} marks.</h2> 
+    {% else %}
+    <h2>The person failed with {{score}} marks.</h2>
+    {% endif %}
+
+    <a href={{ url_for('details') }}><h3>Results</h3></a>
+
+
+</body>
+</html>

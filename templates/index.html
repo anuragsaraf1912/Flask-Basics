@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href = {{ url_for('static', filename = 'style/styles.css') }}>
+    <title>Enter your marks:</title>
+</head>
+<body>
+    <h2 style="text-align: center;">HTML Forms</h2>
+
+    <form action="/submit" method="post">
+        <div class="form-row" style="text-align: center;">
+            <div class="col-md-4 mb-3">
+                <label for="Finance">Finance:</label><br>
+                <input type="text" id="Finance" name="Finance" value="0"><br>
+            </div>       
+            <div class="col-md-4 mb-3">
+                <label for="Statistics">Statistics:</label><br>
+                <input type="text" id="Statistics" name="Statistics" value="0"><br>
+            </div>  
+            <div class="col-md-4 mb-3">     
+                <label for="CompScience">Computer Science:</label><br>
+                <input type="text" id="CompScience" name="CompScience" value="0"><br>
+            </div> 
+        </div>
+        <div style="text-align: center;">
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+    </form>
+
+    
+
+</body>
+</html>
